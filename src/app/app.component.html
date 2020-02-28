@@ -17,3 +17,36 @@ Vamos a crear una varibale llamada autorName = 'Paola Cuadros'
 <div *ngIf="autorName==='Paola'" >
   El nombre es Paola
 </div>
+
+<!-- ----------------- Explicación directiva ngFor ----------------- -->
+<ul>
+  <li *ngFor=" let name of names " >
+    {{ name }}
+  </li>
+</ul>
+
+<!-- Iterar con la posición del arreglo -->
+<ul>
+  <li *ngFor=" let name of names; index as i " >
+    {{ name }} - {{ i }}
+    <!-- Botón para eliminar un elemento de nuestro array -->
+    <button (click)="deleteName(i)" > Delete </button>
+  </li>
+</ul>
+
+<!-- Agregar un item a nuestro arreglo -->
+<button (click)="addName()" > Agregar nombre </button>
+
+<!-- Validar si nuestra lista está vacía
+Si el .length es igual a 0 nos mostrará ese mensaje.
+-->
+<ul>
+  <li *ngIf="names.length === 0" >La lista está vacía</li>
+  <li *ngFor=" let name of names; index as i " >
+    {{ name }} - {{ i }}
+    <!-- Botón para eliminar un elemento de nuestro array -->
+    <button (click)="deleteName(i)" > Delete </button>
+  </li>
+</ul>
+
+<!-- ----------------- Fin explicación directiva ngFor ----------------- -->
