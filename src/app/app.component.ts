@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pageAngular';
+  autorName = 'Paola Cuadros'; // Nueva variable.
 }
