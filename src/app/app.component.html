@@ -8,3 +8,12 @@ Vamos a crear una varibale llamada autorName = 'Paola Cuadros'
 <input type="text" [(ngModel)]="autorName" >
 
 <!-- Esto hace que los cambios que hagamos acá afecte directamente nuestra variable  autorName-->
+
+<!-- Directiva gnIf -->
+<div *ngIf="2===21" >
+  Si, la condición se cumple
+</div>
+<!-- Validar si la variable autorName === 'Paola' -->
+<div *ngIf="autorName==='Paola'" >
+  El nombre es Paola
+</div>
