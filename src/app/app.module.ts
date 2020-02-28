@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms'; // Módulo utilizado para modifica
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MusicComponent } from './components/music/music.component'; // Importado el coponente....
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MusicComponent // Declarando el componente.....
   ],
   imports: [
     BrowserModule,
