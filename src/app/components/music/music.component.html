@@ -1,1 +1,13 @@
 <p>Creamos nuestro primer componente...</p>
+
+<img src="/assets/images/Logo5.png" />
+
+<div *ngFor=" let song of songs " >
+  <button type="button" (click)="chageSong(song.songName)" >
+    {{ song.author }} - {{ song.title }}
+    <img src={{song.image}} width="80" height="80" />
+  </button>
+
+</div>
+
+<video id="playerBitMusic" src="/assets/music/FooFightersThePretender.mp3" controls ></video>
