@@ -7,6 +7,9 @@ Vamos a crear una varibale llamada autorName = 'Paola Cuadros'
 
 <input type="text" [(ngModel)]="autorName" >
 
+<div *ngIf="autorName==='Paola'; else elseBlock">Hola care bola</div>
+<ng-template #elseBlock>Content to render when value is null.</ng-template>
+
 <!-- Esto hace que los cambios que hagamos acá afecte directamente nuestra variable  autorName-->
 
 <!-- Directiva gnIf -->
